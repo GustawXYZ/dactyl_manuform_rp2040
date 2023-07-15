@@ -15,7 +15,7 @@ That means pin just swap following pins on the diagrams and you should be fine
 for the matrix soldering connections:
 
 |ProMicro|PiPico|
-|-+-|
+|-|-|
 |4|GP10|
 |5|GP11|
 |6|GP12|
@@ -33,7 +33,7 @@ I used the 4 pin jack 3.5mm connection. It uses SERIAL_USART_FULL_DUPLEX (whatev
 Conenctions are as following:
 
 |Left PiPico|Right PiPico|
-|-+-|
+|-|-|
 |3V3|3V3|
 |GND|GND|
 |GP9|GP8|
