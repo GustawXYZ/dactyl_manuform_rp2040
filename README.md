@@ -10,7 +10,9 @@ Hopefully it will get merged and will be available in: https://github.com/qmk_fi
 ## Build
 
 I strived to make soldering as similar as possible to dactyl_manuform guide.
-https://github.com/GustawXYZ/dactyl_manuform_rp2040/
+
+[abstracthat/dactyl-manuform](https://github.com/abstracthat/dactyl-manuform)
+
 That means pin just swap following pins on the diagrams and you should be fine
 for the matrix soldering connections:
 
