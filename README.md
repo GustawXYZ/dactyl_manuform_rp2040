@@ -52,7 +52,7 @@ If my fork is not yet merged you need to use `qmk clone` to use it.
 Next proceed with the following for a simple update/flash:
 
 ```bash
-cd keyboards/handwired/dactyl_manuform_rp2040 &&
+cd ~/qmk_firmware/keyboards/handwired/dactyl_manuform_rp2040 &&
 qmk flash
 ```
 This should build the firmware and try flashing.
