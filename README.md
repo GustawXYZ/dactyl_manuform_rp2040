@@ -70,7 +70,7 @@ Plug left half while holding RESET.
 ```bash
 qmk flash -bl uf2-split-right
 ```
-Plug left right while holding RESET.
+Plug right half while holding RESET.
 
 ## With QMK Configurator
 
