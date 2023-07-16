@@ -15,8 +15,7 @@ I strived to make soldering as similar as possible to dactyl_manuform guide.
 
 [abstracthat/dactyl-manuform](https://github.com/abstracthat/dactyl-manuform)
 
-That means thay just swap following pins on the diagrams and you should be fine
-for the ley matrix part.
+That means thay just swap following pins on the diagrams and you should be fine.
 Switched connections:
 
 |ProMicro|PiPico|
