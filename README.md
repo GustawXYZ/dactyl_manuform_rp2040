@@ -46,11 +46,11 @@ Conenctions are as following:
 
 GP8 and GP9 are switch in "X" pattern, so that TX and RX are switched on the other board.
 
-To use you need to set up qmk_firmware as per here: https://docs.qmk.fm/#/newbs_building_firmware
+## Flashing firmware
+
+You need to set up `qmk` toolchain as per here: https://docs.qmk.fm/#/newbs_building_firmware
 
 If my fork is not yet merged you need to use `qmk clone` to use it.
-
-## FLASHING
 
 Next proceed with the following commands for a simple update/flash:
 
