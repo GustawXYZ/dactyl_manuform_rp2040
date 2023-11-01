@@ -6,6 +6,8 @@
 
 This is a dactyl_manuform on Raspberry Pi Pico guide.
 
+Here is vial firmware fork, which allows hot-configuration of keymaps via [vial.rocks](https://vial.rocks) https://github.com/GustawXYZ/vial-qmk/tree/vial
+
 For now you need to use my fork: https://github.com/GustawXYZ/qmk_firmware
 Hopefully it will get merged and will be available in: https://github.com/qmk_firmware/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform_rp2040
 
@@ -48,6 +50,22 @@ GP8 and GP9 are switch in "X" pattern, so that TX and RX are switched on the oth
 
 ## Flashing firmware
 
+### Vial
+
+First do the setup `qmk` from QMK section.
+
+Then clone my fork somewhere that is NOT ~/qmk_firmware, e.g. `git clone https://github.com/GustawXYZ/vial-qmk/ ~/vial-qmk`
+
+Then `cd ~/vial-qmk` `make git-submodule` and `make handwired/dactyl_manuform_pi_pico:vial`
+
+If the build fails try `make claen` and `rm -r lib/*` (https://github.com/qmk/qmk_firmware/issues/15125)
+
+If this succeeds you will have ready firmware in .build folder.
+
+To flash, open .build folder in your file editor of choice, and set your keyboard into bootloader mode by holding the RESET button and plugging in the USB. After that you can open the new "drive" that shoud be called something like RPI-PICO, and drag `.build/handwired_dactyl_manuform_pi_pico_default.uf2` to the new drive. This should flash the keyboard and automatically unmount it. Wait a few seconds and repeat for other half (with the same .uf2 file)
+
+### QMK
+
 You need to set up `qmk` toolchain as per here: https://docs.qmk.fm/#/newbs_building_firmware
 
 If my fork is not yet merged you need to use `qmk clone` to use it.
@@ -55,7 +73,7 @@ If my fork is not yet merged you need to use `qmk clone` to use it.
 Next proceed with the following commands for a simple update/flash:
 
 ```bash
-cd ~/qmk_firmware/keyboards/handwired/dactyl_manuform_rp2040 &&
+cd ~/qmk_firmware/keyboards/handwired/dactyl_manuform_pi_pico &&
 qmk flash
 ```
 This should build the firmware and try flashing it.
